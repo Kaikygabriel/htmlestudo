@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão que muda.</title>
+    <style>
+     
+     body{background-image: linear-gradient(To right, #8282FA 10%, #D082FA);}
+        .bt{
+            box-shadow: 1px 1px 7px black;
+            text-align: center;
+            height: 50px;
+            width: 100px;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            text-shadow: 1px 1px 7px gray;           
+            border-radius: 10px;
+            background-color: lightgrey;
+        }
+        .bt:hover{
+            background-color: transparent;
+            color: blue;
+            transform: scale(1.5) rotate(360deg);
+            cursor: grab;
+            border: 2px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <input type="button" value=" botao" class="bt">
+    </div>
+</body>
+</html>
