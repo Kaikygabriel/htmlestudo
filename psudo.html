@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de houver</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div > p{
+            display: none;
+
+        }
+        div:hover > p{
+            display: block;
+        }
+        div:hover{
+            text-align: center;
+            box-shadow: 2px 2px 5px gray;
+            border-radius: 10px;
+            border: 1px solid black;
+            color: red;
+            background-color: lightgray;
+            width: 200px;
+            height: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>exemplo de houver</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui 
+        <p>TEXTO ESCONDIDO HAHA...</p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>
