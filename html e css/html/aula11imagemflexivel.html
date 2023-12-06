@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>
+        Imagen dinamica
+    </h1>
+    <p>abra esse site em dispositivos diferentes ou diminui o tamanho da aba/navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="foto-m.png" type="image/png">
+        <img src="foto-g.png" alt="Imagen flexivel">
+        
+    </picture>
+    <h1>Vamos aprender a reproduzir audio em html .<h1>
+        <p>audios reproduzindo, primeira forma:</p>
+        <audio src="Hotlanta - Track Tribe.mp3" controls autoplay></audio>
+        <!--HP3 WAV OGG formas que pega em outros navegadores-->
+        <p>outra forma</p>
+          <!--controls serve para obter o controle play no audio-->
+        <audio preload="metadata" autoplay controls >
+            <source src="Hotlanta - Track Tribe.mp3" type="audio/mpeg">
+            <source src="Hotlanta - Track Tribe.ogg" type="audio/ogg">
+            <source src="Hotlanta - Track Tribe.hav" type="audio/hav">
+        </audio>
+        <p>Infelizmente o navegador nao reproduziu o audio <a href="Hotlanta - Track Tribe.mp3" >click aqui </a>para baixar</p>
+</body>
+</html>
